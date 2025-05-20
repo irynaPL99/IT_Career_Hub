@@ -1,0 +1,6 @@
+Start
+Mon Mar 10 16:10:13 UTC 2025
+dr-xr-xr-x   12 root     root             0 Mar 10 16:07 sys
+drwxrwxrwt    2 root     root            37 Jan  9  2021 tmp
+drwxr-xr-x   10 root     root           229 Jun 24  2020 usr
+drwxr-xr-x   16 root     root           348 Aug 27  2020 var

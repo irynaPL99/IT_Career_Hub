@@ -1,0 +1,1000 @@
+   30  nano task_yuliiaT.sh
+   31  chmod +x task_yuliiaT.sh
+   32  ./task_yuliiaT.sh
+   33  ls -l task_yuliiaT.sh
+   34  nano task_yuliiaT.sh
+   35  ./task_yuliiaT.sh
+   36  export EDITOR=nano
+   37  crontab -e
+   38  history > history.log
+   39  tar -cvf archive.tar ~/ВашеИмя/* history.log
+   40  tar -cvf archive.tar ~/yuliiaT/* history.log
+   41  crontab -e
+   42  mkdir -p /opt/240125_WDE/CRISTINA_BUGA
+   43  touch /opt/240125_WDE/CRISTINA_BUGA/.process_management
+   44  date >> /opt/240125_WDE/CRISTINA_BUGA/.pr
+   45  date >> /opt/240125_WDE/CRISTINA_BUGA/.process_management
+   46  echo "Welcome to Amazon server" >> /opt/240125_WDE/CRISTINA_BUGA/.process_management
+   47  free -h | grep Mem | >> /opt/240125_WDE/CRISTINA_BUGA/.process_management
+   48  ps -U root --no-headers | wc -1 >> /opt/240125_WDE/CRISTINA_BUGA/.process_management 
+   49  ps -U root --no-headers | wc >> /opt/240125_WDE/CRISTINA_BUGA/.process_management 
+   50  printenv | grep CRISTINA_VARIABLE >> /opt/240125_WDE/CRISTINA_BUGA/.process_management 
+   51  ps -ef | grep "/usr/sbin/sshd -D" | grep -v grep | >> /opt/240125_WDE/CRISTINA_BUGA/.process_management 
+   52  cat /opt/240125_WDE/CRISTINA_BUGA/.process_management 
+   53  scp ec2-user@linux.itcareerhub.de:/opt/240125_WDE/CRISTINA_BUGA/.process_management .
+   54  env
+   55  cd /opt/chumak/
+   56  mkdir 2603
+   57  cd 2603/
+   58  nano 1
+   59  chmod 744 1 
+   60  ./1 
+   61  nano 1
+   62  ./1 
+   63  nano 3
+   64  chmod 744 3
+   65  ./3
+   66  cd
+   67  env
+   68  htop
+   69  top
+   70  exit
+   71  ps -aux
+   72  ls -l
+   73  ls -l /bin
+   74  chmod ccccооссс
+   75  pwd
+   76  cd /opt/210225-ptm/Pankow
+   77  chmod u-r 1
+   78  mkdir -p 2603
+   79  cd 2603
+   80  ls
+   81  ls -a
+   82  scp ec2-user@linux.itcareerhub.de:opt/chumak/2603/1 .
+   83  ps 
+   84  ps -aux
+   85  free
+   86  free -h
+   87  free --help
+   88  cd /opt/chumak/
+   89  ls
+   90  touch file.txt
+   91  ls -l
+   92  ls -l /bin
+   93  cd 2603/
+   94  ls
+   95  ls -l
+   96  chmod u-r
+   97  chmod u-r 1
+   98  ls -l
+   99  cat 1
+  100  echo "# hello" >> 1
+  101  nano 1
+  102  chmod u+r 1
+  103  cat 1
+  104  ls
+  105  cat 3
+  106  ping 8.8.8.8
+  107  pwd
+  108  scp ec2-user@linux.itcareerhub.de:/opt/chumak/2603/1 .
+  109  ls
+  110  cd ..
+  111  ls
+  112  оатлотимлуокмтл
+  113  оруорцумаорцумауо
+  114  djknkjewbfkejw
+  115  jenfkjerbfkejfb
+  116  cat /var/spool/mail/ec2-user 
+  117  cat /var/spool/mail/ec2-user | wc -l
+  118  cat /var/spool/mail/root
+  119  ls -l /var/spool/mail/
+  120  sudo cat /var/spool/mail/root
+  121  exit
+  122  top
+  123  ps -aux
+  124  free
+  125  free -h
+  126  free --help
+  127  cd /opt
+  128  ls
+  129  cd /210225-ptm
+  130  cd 210225-ptm
+  131  ls
+  132  cd Anastasiia
+  133  bmvmhnvmb km
+  134  cat /var/spool/mail/ec2-user
+  135  cat /var/spool/mail/ec2-user | wc -l
+  136  env
+  137  ps -aux
+  138  free
+  139  free -h
+  140  --help
+  141  cd opp/schwab
+  142  cd opt/schwab
+  143  cd opt/210225-ptm/schwab
+  144  cd
+  145  cd /opt/210225-ptm/schwab
+  146  ls -l
+  147  pwd
+  148  cd
+  149  cd /opt/210225-ptm/schwab
+  150  cd
+  151  exit
+  152  ssh  ec2-user@linux.itcareerhub.de
+  153  ls -l /var/spool/mail/
+  154  htop
+  155  ps
+  156  ps -aux
+  157  free
+  158  ls -l
+  159  cd /home/pavel
+  160  pwd
+  161  tree
+  162  cd ..
+  163  cd /opt/210225-ptm/Pavel
+  164  cd /opt/210225-ptm/Mark
+  165  tree /opt/210225-ptm/Mark
+  166  tree /opt/210225-ptm
+  167  tree /opt/210225-ptm/mark
+  168  cd /opt/210225-ptm/mark
+  169  hfghfdghfdhgfkj
+  170  export WJATSCHESLAW_VARIABLE=210225-ptm
+  171  date >> /otp/210225-ptm/schwab/.process_managment
+  172  touch /opt/210225-ptm/schwab/.process_management
+  173  date >> /opt/210225-ptm/schwab/.process_management 
+  174  echo "Welcome to Amazon server" >> /opt/210225-ptm/schwab/.process_management 
+  175  free -h | grep Mem >> /opt/210225-ptm/schwab/.process_management 
+  176  ps -ef | grep root | grep -v grep --color=auto | wc -1
+  177  ps -ef | grep root | grep -v grep --color=auto | wc -l
+  178  ps -ef | grep root | grep -v grep --color=auto | wc -l >> /opt/210225-ptm/schwab/.process_management 
+  179  env | grep WJATSCHESLAW_VARIABLE >> /opt/210225-ptm/schwab/.process_management 
+  180  ps ef | grep "/usr/sbin/sshd -D" | grep -v grep | awk '{print "PID", $, "PPID", $3}' >> /otp/210225-ptm/schwab/.process_management 
+  181  ps ef | grep "/usr/sbin/sshd -D" | grep -v grep | awk '{print "PID", $, "PPID", $3}' >> /opt/210225-ptm/schwab/.process_management 
+  182  ps ef | grep "/usr/sbin/sshd -D" | grep -v grep | awk '{print "PID", $2, "PPID", $3}' >> /opt/210225-ptm/schwab/.process_management 
+  183  cat /opt/210225-ptm/schwab/.process_management 
+  184  cd /opt/210225-ptm/schwab
+  185  ls -a
+  186  exit
+  187  ps
+  188  ps -aux
+  189  free
+  190  free -h
+  191  cd
+  192  touch ruslanb
+  193  cat ruslanb
+  194  sudo su 
+  195  mkdir 123
+  196  > 123/1.txt
+  197  rmdir 123/
+  198  rm 123/
+  199  rm -r 123/
+  200  ls 
+  201  ls -1
+  202  ls -al
+  203  env
+  204  > 5.mov
+  205  ls -l
+  206  cd /opt/chumak/2603/
+  207  ls
+  208  nano 1
+  209  sudo su
+  210  exit
+  211  exit
+  212  cat /var/spool/mail/ec2-user | wc -l
+  213  cd /opt/131224-wdm/NikIst/
+  214  env
+  215  exit
+  216  cd /opt/131224-wdm/nastyaKo/
+  217  exit
+  218  git rev-parse --show-toplevel
+  219  cd
+  220  init
+  221  git init
+  222  git add .
+  223  git remote -v
+  224  git branch -m main
+  225  cd /opt/131224-wdm/dennis/
+  226  ls
+  227  cat my
+  228  cat myfirstbashscript.sh 
+  229  clear
+  230  pwd
+  231  cd /opt/131224-wdm/nataliia/
+  232  ls -la
+  233  cd ..
+  234  ls -la
+  235  rm Nataliia
+  236  ls -la
+  237  cat nataliia
+  238  exit
+  239  clear
+  240  cd /opt/131224-wdm/nastyaKo/
+  241  ls -la
+  242  cat permission_checker.sh 
+  243  nano script25.sh 
+  244  nano 2503.sh 
+  245  cd /opt
+  246  ды -дф
+  247  ls -la
+  248  cd /opt/chumak/2603/
+  249  nano 1
+  250  ./1
+  251  cat 1
+  252  pwd
+  253  chmod u-w 1
+  254  cat 1 
+  255  nano 1 
+  256  bash 1
+  257  cat 1
+  258  cat 1 > 2345
+  259  ls -l
+  260  nano 2345 
+  261  git rev-parse --show-toplevel
+  262  cd
+  263  git init
+  264  git add .
+  265  tree
+  266  git rev-parse --show-toplevelxcc
+  267  git rev-parse --show-toplevel
+  268  git branch
+  269  ls -a
+  270  rm -ri .git
+  271  rm -rf .git
+  272  git remote -v
+  273  nano permission_checker.sh 
+  274  ./permission_checker.sh 
+  275  nano permission_checker.sh 
+  276  exit
+  277  ps -aux
+  278  clear
+  279  free -g
+  280  free -mb
+  281  free -h
+  282  cd /opt/210225-ptm/petrov/home_work/
+  283  ls
+  284  ls -l
+  285  cat home_work.txt
+  286  cat home_work
+  287  cat home_work.txt
+  288  cat /var/spool/mail/ec2-user
+  289  cat /var/spool/mail/ec2-user | wc -l
+  290  cat /var/spool/mail/root
+  291  sudo 
+  292  sudo cat /var/spool/mail/root
+  293  sudo su
+  294  whoami
+  295  whereis
+  296  whereis ls
+  297  free
+  298  free -m
+  299  cd /opt/210225-ptm/platonova/
+  300  touch file.txt
+  301  ls -l
+  302  cat /var
+  303  cat /var/spool/mail/ec2-user 
+  304  cat /var/spool/mail/ec2-user | wc -l
+  305  cat /var/spool/mail/root
+  306  ls -l /var/spool/mail/root
+  307  ls -l /var/spool/mail/
+  308  sudo cat /var/spool/mail/root
+  309  sudo su
+  310  ps
+  311  ps -ef
+  312  ps -aux
+  313  free
+  314  free -h
+  315  cat os-release
+  316  cat /etc/os-release
+  317  cd /opt
+  318  ls
+  319  cd 210225-ptm/
+  320  cd vadym/
+  321  ls -l
+  322  cd.
+  323  cd..
+  324  cd ..
+  325  ls
+  326  cd daniil/
+  327  ls -l
+  328  cd ..
+  329  cd vadym/
+  330  ls -l /bin
+  331  env
+  332  cd ..
+  333  ls -l
+  334  cd daniil
+  335  ls -l
+  336  cd ..
+  337  cd oleg
+  338  cd oleg/
+  339  ls -l
+  340  cd Oleg/
+  341  ls -l
+  342  cat process_management.txt 
+  343  cd ..
+  344  ls -l
+  345  cd oleksandr_p/
+  346  ls -l
+  347  cd ..
+  348  ls -l
+  349  cat /var/spool/mail/ec2-user/daniil
+  350  cat /var/spool/mail/ec2-user/
+  351  cd /var/spool/mail/ec2-user/daniil
+  352  cd /var/spool/mail/ec2-user/daniil/
+  353  cat /var/spool/mail/ec2-user
+  354  cat /var/spool/mail/root
+  355  sudo cat /var/spool/mail/root
+  356  sudo su
+  357  ls -l
+  358  cd daniil
+  359  ls -l
+  360  ps -ef
+  361  top
+  362  ps -ef
+  363  ps -ef | grep “/usr/sbin/sshd -D"
+  364  ps -ef | grep “/usr/sbin/sshd -D" | awk '{print "PID" %2, "PPID" %3}'
+  365  ps -ef | grep “/usr/sbin/sshd -D"
+  366  ps -ef | grep “/usr/sbin/sshd -D" | awk '{print "PID" %2, "PPID" %3}'
+  367  ps -ef | grep “/usr/sbin/sshd -D"
+  368  ps -ef | grep “/
+  369  ps -ef | grep “/usr/sbin/sshd -D" | awk '{print "PID" %2, "PPID" %3}'
+  370  ps -ef | grep “/usr/sbin/sshd -D" | awk '{print "PID", %2, "PPID", %3}'
+  371  ps -ef | grep “/usr/sbin/sshd -D" | awk '{print "PID" %2, "PPID" %3}'
+  372  ps -ef | grep “/usr/sbin/sshd -D" | awk '{print "PID", $2, "PPID", $3}'
+  373  ps -ef | grep “/usr/sbin/sshd -D" | awk '{print "PID" %2, "PPID" %3}'
+  374  ps -ef | grep “/usr/sbin/sshd -D" | awk '{print "PID", $2, "PPID", $3}'
+  375  ps -ef | grep “/usr/sbin/sshd -D" | awk '{print "PID", $2, "PPID", $3}'
+  376  ps -ef | grep “/usr/sbin/sshd -D"
+  377  ps -ef | grep “/usr/sbin/sshd -D"
+  378  ps -ef | grep “/usr/sbin/sshd -D"
+  379  cd ..
+  380  ps -ef | grep “/usr/sbin/sshd -D"
+  381  ps -ef
+  382  exit
+  383  ps -ef
+  384  ps -ef | grep "“/usr/sbin/sshd -D"
+  385  ps -ef | grep "/usr/sbin/sshd -D"
+  386  ps -ef | grep "/usr/sbin/sshd -D" | grep -v grep
+  387  ps -ef | grep root "/usr/sbin/sshd -D"
+  388  ps -ef | grep "root","/usr/sbin/sshd -D"
+  389  ps -ef | grep "/usr/sbin/sshd -D" | grep -v grep | awk '{print "PID", $2, "PPID", }' 
+  390  ps -ef | grep "/usr/sbin/sshd -D" | grep -v grep | awk '{print "PID", $2, "PPID", $3}' 
+  391  ps -ef | grep "root"&"/usr/sbin/sshd -D"
+  392  grep --help
+  393  ps -ef | grep "/usr/sbin/sshd -D"
+  394  ps -ef | grep 'root."/usr/sbin/sshd -D"
+  395  ps -ef | grep 'root."/usr/sbin/sshd -D"'
+  396  ps -ef | grep 'root."/usr/sbin/sshd -D"
+  397  ps -ef | grep '"root"."/usr/sbin/sshd -D"'
+  398  ps -ef | grep "/usr/sbin/sshd -D" | grep root
+  399  ps -ef | grep "/usr/sbin/sshd -D"
+  400  ps -ef | grep "/usr/sbin/sshd -D" | grep root
+  401  ps -ef | grep "/usr/sbin/sshd -D" | grep -v grep
+  402  ps -ef
+  403  cd /opt/131224-wdm/NikIst/
+  404  ls
+  405  nano ping_monitor.sh
+  406  cat ping_monitor.sh 
+  407  chmod 744 ping_monitor.sh 
+  408  ls -la
+  409  ./ping_monitor.sh 
+  410  nano ping_monitor.sh 
+  411  ./ping_monitor.sh 
+  412  nano ping_monitor.sh 
+  413  ./ping_monitor.sh 
+  414  exit
+  415  /opt/210225-ptm/Pankow
+  416  cd /opt/210225-ptm/Pankow
+  417  export ALEX_VARIAABLE=210225-ptm
+  418  touch /opt/210225-ptm/Pankow/.process_management
+  419  ls
+  420  ls -l
+  421  ls -a
+  422  date > .process_management
+  423  cat .process_management
+  424  echo "Welcome to Amazon server" >> .process_management
+  425  cat .process_management
+  426  free -m
+  427  free -h
+  428  free -h >> .process_management  
+  429  cat .process_management
+  430  ps -ef | grep -w root >> .process_management
+  431  cat .process_management
+  432  env
+  433  env | grep ALEX_VARIAABLE=210225-ptm
+  434  env | grep ALEX_VARIAABLE=210225-ptm >>
+  435  env | grep ALEX_VARIAABLE=210225-ptm >> .process_management
+  436  cat .process_management
+  437  cd  /opt/240125-wde/
+  438  cd denys_ryzhenko/
+  439  export DENYS_VARIABLE="240125-wde"
+  440  env
+  441  env | grep "DENYS"
+  442  touch .process_management
+  443  ls -al
+  444  date >> .process_management 
+  445  echo "Welkom to Amason server" >> .process_management 
+  446  free -h
+  447  free -h | grep "Mem:"
+  448  free -h | grep "Mem:" | awk {'print $2'}
+  449  free -h | grep "Mem:" | awk {'print $2'} >> .process_management 
+  450  ps aux
+  451  ps aux | grep "root"
+  452  ps aux | grep "root" | wc -l
+  453  ps aux | grep "root" | wc -l >> .process_management 
+  454  env | grep "DENYS" >> .process_management 
+  455  ps aux 
+  456  ps -ef
+  457  ps -ef | grep "/usr/sbin/sshd -D"
+  458  ps -ef | grep "/usr/sbin/sshd -D" | grep "root"
+  459  cd /opt/210225-ptm/Pankow
+  460  ps -e
+  461  ps -ef
+  462  ps -ef | grep "/usr/sbin/sshd -D" | grep -v grep |awk '{print "PID", $2, "PPID", $3}' >>
+  463  ps -ef | grep "/usr/sbin/sshd -D" | grep -v grep |awk '{print "PID", $2, "PPID", $3}' >> /opt/210225-ptm/Pankow/.process_management
+  464  cat /opt/210225-ptm/Pankow/.process_management
+  465  ps -ef
+  466  ps -ef /usr/sbin/sshd -D
+  467  ps -ef
+  468  exit
+  469  ls -l /opt/210225-pmt
+  470  pwd
+  471  ls -l /opt/210225-pmt/
+  472  cd /
+  473  ls
+  474  ls -l /opt/210225-ptm
+  475  ps - aux
+  476  ps -aux
+  477  free
+  478  opt
+  479  opt/
+  480  find / -type d -name "*Yevhen*" 2>/dev/null
+  481  /opt/210225-ptm/Yevhen
+  482  2603
+  483  /2603
+  484  find / -type d -name "*Yevhen*" 2>/dev/null
+  485  find / -type d -name "*2603*" 2>/dev/null
+  486  cd /opt/chumak/2603
+  487  ls -la
+  488  cat /var/
+  489  cd
+  490  cat /var/spool/mail/ec2-user | wc -l
+  491  cat /var/spool/mail/
+  492  ls -l /var/spool/mail/
+  493  sudo cat /var/spool/mail/root
+  494  sudo su 
+  495  cd /opt/131224-wdm
+  496  ls -la
+  497  cd ar 24 12:45 yuliiaT
+  498  [ec2-user@ip-10-0-42-153 131224-wdm]$
+  499  cd olha_prekrasna
+  500  ls -la
+  501  cat 2503.sh
+  502  cd Alla/
+  503  cd ..
+  504  cd Alla/
+  505  cd Alla
+  506  cd /Alla
+  507  wdm
+  508  pwd
+  509  cd /131224-wdm/Alla
+  510  ls -la
+  511  pwd
+  512  cd /131224-wdm/Alla/
+  513  cd /opt/131224-wdm/Alla
+  514  ls -la
+  515  nano ping.sh
+  516  ./ping.sh
+  517  chmod 477 ping.sh
+  518  ls -la
+  519  ./ping.sh
+  520  chmod 744 ping.sh
+  521  ./ping.sh
+  522  clear
+  523  cat ping.sh
+  524  nano ping.sh
+  525  cd /opt/210225-ptm
+  526  ls -l
+  527  cd vadym/
+  528  ls -l
+  529  pwd
+  530  cd /opt/131224-wdm
+  531  cd Viktor/
+  532  vi sleeper.sh
+  533  ./ sleeper.sh 
+  534  / sleeper.sh 
+  535  ls -la
+  536  chmod +x sleeper.sh 
+  537  / sleeper.sh 
+  538  ls -la
+  539  ./ sleeper.sh ./ sleeper.sh 
+  540  bash sleeper.sh 
+  541  ./sleeper.sh
+  542  vi sleeper.sh
+  543  ./sleeper.sh
+  544  vi sleeper.sh
+  545  ./sleeper.sh
+  546  vi sleeper.sh
+  547  ./sleeper.sh
+  548  vi sleeper.sh
+  549  ./sleeper.sh
+  550  vi sleeper.sh
+  551  ls -la
+  552  cd output.log/
+  553  ls -la
+  554  cd ..
+  555  cd /opt/240125-wde/denys_ryzhenko/
+  556   ps -ef | grep "/usr/sbin/sshd -D" | grep "root" | awk {'print $2 $3'}
+  557   ps -ef | grep "/usr/sbin/sshd -D" | grep "root" | awk {'print $2" "$3'}
+  558   ps -ef | grep "/usr/sbin/sshd -D" | grep "root" | awk {'print "PID "$2" PPID "$3'}
+  559   ps -ef | grep "/usr/sbin/sshd -D" | grep "root" | awk {'print "PID "$2" PPID "$3'} >> .process_management 
+  560  cat .process_management 
+  561  ps -aux
+  562  las /opt/
+  563  ls /opt
+  564  tree /opt
+  565  cd /opt/210225-ptm/daniil
+  566  ls
+  567  df
+  568  df -h
+  569  free
+  570  free -m
+  571  free -g
+  572  cat /etc/os-release /proc/cpuinfo
+  573  top
+  574  ps
+  575  ps -ef
+  576  ps aux
+  577  grep -w sshd | ps -aux 
+  578  ps -aux | grep -w sshd
+  579  exit
+  580  touch permission_cheker.sh
+  581  chmod +x script .sh
+  582  nano permission_checker.sh
+  583  chmod +x permission_checker.sh
+  584  ./permission_checker.sh
+  585  na
+  586  cat /opt/131224-wdm/permission_checker.sh
+  587  nano /opt/131224-wdm/permission_checker.sh
+  588  cd opt/
+  589  cd /opt/210225-ptm/vadym/
+  590  ls -l
+  591  nano Hausaufgabe_6.sh 
+  592  free
+  593  nano Hausaufgabe_6.sh 
+  594  ls -l
+  595  chmod u+x Hausaufgabe_6.sh 
+  596  ls -l
+  597  cd ..
+  598  ls
+  599  cd daniil
+  600  ls -l
+  601  cd
+  602  env
+  603  ls -l
+  604  cd /chumak
+  605  cd /chumak/
+  606  cd chumak/
+  607  ls
+  608  cat 1
+  609  cd ..
+  610  ls
+  611  pwd
+  612  ls -l
+  613  cd opt/
+  614  exir
+  615  exit
+  616  cd /opt/131224-wdm/NikIst
+  617  ls
+  618  nano ping_monitor.sh 
+  619  cat ping_monitor.sh 
+  620  nano ping_monitor.sh 
+  621  ./ping_monitor.sh 
+  622  cat ping_monitor.sh 
+  623  nano ping_monitor.sh 
+  624  ./ping_monitor.sh 
+  625  cat ping_monitor.sh 
+  626  nano disk_monitor.sh
+  627  chmod 744 disk_monitor.sh 
+  628  ls -la
+  629  ./disk_monitor.sh 
+  630  pwd
+  631  ls
+  632  exir
+  633  exit
+  634  ld
+  635  id
+  636  ls
+  637  pwd
+  638  ls -la
+  639  cd opt
+  640  cd ..
+  641  pwd
+  642  ls -la
+  643  cd ..
+  644  pwd
+  645  ls -la
+  646  pwd
+  647  cd home#
+  648  cd home
+  649  ls -la
+  650  cd ec2-user
+  651  ls -la
+  652  /
+  653  pwd
+  654  cd ..
+  655  pwd
+  656  cd opt
+  657  pwd
+  658  ls -la
+  659  cd 131224-wdm
+  660  pwd
+  661  ls -la
+  662  cd .illiashenko_toni
+  663  ls -la
+  664  pwd
+  665  nano permission_checker.sh
+  666  ls -la
+  667  nano permission_checker.sh
+  668  ls -la
+  669  chmod +x permission_checker.sh
+  670  ./permission_checker.sh
+  671  ls -la
+  672  pwd
+  673  nano permission_checker.sh
+  674  ls -l
+  675  cd /opt/210225-ptm/vadym
+  676  ls -l
+  677  nano Hausaufgabe_6.sh 
+  678  export VADYM_VARIABLE=210225-ptm
+  679  env
+  680  nano Hausaufgabe_6.sh 
+  681  date +%D > /opt/210225-ptm/vadym/.process_management ; echo "Welcome to Amazon server" >> /opt/210225-ptm/vadym/.process_management
+  682  date +%D > cat /opt/210225-ptm/vadym/.process_management
+  683  ls -l
+  684  pwd
+  685  cat /opt/210225-ptm/vadym/.process_management
+  686  nano Hausaufgabe_6.sh 
+  687  free -m | grep Mem | awk '{print "Total memory size (MB):", $2}' >> /opt/210225-ptm/vadym/.process_management
+  688  cat /opt/210225-ptm/vadym/.process_management
+  689  free --help
+  690  free
+  691  nano Hausaufgabe_6.sh 
+  692  ps -ef | grep root | wc -l >> /opt/210225-ptm/vadym/.process_management
+  693  nano Hausaufgabe_6.sh 
+  694  cat /opt/210225-ptm/vadym/.process_management
+  695  nano Hausaufgabe_6.sh 
+  696  env | grep VADYM_VAR >> /opt/210225-ptm/vadym/.process_management
+  697  cat /opt/210225-ptm/vadym/.process_management
+  698  nano Hausaufgabe_6.sh 
+  699  ps -ef | grep "/usr/sbin/sshd -D" | grep -v grep | awk '{print "PID", $2, "PPID", $3}'
+  700  nano Hausaufgabe_6.sh 
+  701  ps -ef | grep "/usr/sbin/sshd -D" | grep -v grep | awk '{print "PID", $2, "PPID", $3}' >> /opt/210225-ptm/vadym/.process_management
+  702  cat /opt/210225-ptm/vadym/.process_management
+  703  ps -ef
+  704  unset VADYM_VARYABLE
+  705  env
+  706  unset VADYM_VARIABLE
+  707  env
+  708  ls -l
+  709  cat Hausaufgabe_6.sh 
+  710  ls -la
+  711  cat .process_management 
+  712  bash --help
+  713  bash Hausaufgabe_6.sh 
+  714  env
+  715  bash --help
+  716  bash --debag Hausaufgabe_6.sh 
+  717  bash --debug Hausaufgabe_6.sh 
+  718  nano Hausaufgabe_6.sh 
+  719  bash Hausaufgabe_6.sh 
+  720  env
+  721  env | grep VADYM
+  722  nano Hausaufgabe_6.sh
+  723  ./Hausaufgabe_6.sh 
+  724  nano Hausaufgabe_6.sh
+  725  /opt/210225-ptm/vadym/Hausaufgabe_6.sh 
+  726  env
+  727  sh Hausaufgabe_6.sh 
+  728  env
+  729  env grep VADYM
+  730  env | grep VADYM
+  731  nano Hausaufgabe_6.sh 
+  732  sh Hausaufgabe_6.sh 
+  733  env | grep VADYM
+  734  ls -l
+  735  cat .process_management 
+  736  nano Hausaufgabe_6.sh 
+  737  cd ..
+  738  ls -l
+  739  cd ..
+  740  ls -l
+  741  cd 240125-wde/
+  742  ls -l
+  743  cd Ivan_Krykunov/
+  744  ls -l
+  745  cd ..
+  746  cd mariia.rybalka/
+  747  ls -l
+  748  cd ..
+  749  ls -l
+  750  cd chumak/
+  751  ls -l
+  752  cat file.txt 
+  753  cd ..
+  754  ls -l
+  755  cd ..
+  756  ls -l
+  757  cd backup/
+  758  ls -l
+  759  cd ..
+  760  cd aws/
+  761  ls -l
+  762  cd bin/
+  763  ls
+  764  cat cfn-hup 
+  765  cd /opt/210225-ptm/vadym/
+  766  nano Hausaufgabe_6.sh 
+  767  sh Hausaufgabe_6.sh 
+  768  env | grep VA
+  769  env | grep VAD
+  770  bash Hausaufgabe_6.sh 
+  771  env | grep VAD
+  772  nano Hausaufgabe_6.sh 
+  773  bash Hausaufgabe_6.sh 
+  774  env | grep VAD
+  775  rm Hausaufgabe_6.sh Hausaufgabe_6.sh
+  776  rm Hausaufgabe_6.sh  Hausaufgabe_6.sh
+  777  ls -l
+  778  nano Hausaufgabe_6.sh
+  779  chmod u+x Hausaufgabe_6.sh 
+  780  ls -l
+  781  bash Hausaufgabe_6.sh
+  782  nano Hausaufgabe_6.sh
+  783  env | grep VAD
+  784  bash Hausaufgabe_6.sh
+  785  env | grep VAD
+  786  ls -l
+  787  nano Hausaufgabe_6.sh 
+  788  bash Hausaufgabe_6.sh
+  789  env
+  790  nano Hausaufgabe_6.sh 
+  791  bash Hausaufgabe_6.sh
+  792  env
+  793  env | grep VARIA
+  794  nano Hausaufgabe_6.sh 
+  795  bash Hausaufgabe_6.sh
+  796  nano Hausaufgabe_6.sh 
+  797  export VADYM_VARIABLE=210225-ptm
+  798  env |grep VAD
+  799  unset VADYM_VARIABLE
+  800  env |grep VAD
+  801  bash Hausaufgabe_6.sh
+  802  nano Hausaufgabe_6.sh 
+  803  bash Hausaufgabe_6.sh
+  804  ls -l
+  805  pwd
+  806  nano Hausaufgabe_6.sh 
+  807  date +%D > /opt/210225-ptm/vadym/.process_management ; echo "Welcome to Amazon server" >> /opt/210225-ptm/vadym/.process_management
+  808  ls -l
+  809  ls -la
+  810  cat .process_management 
+  811  bash Hausaufgabe_6.sh
+  812  cat .process_management 
+  813  env | VAD
+  814  env | grep VAD
+  815  env
+  816  ls -la
+  817  rm .process_management 
+  818  ls -la
+  819  bash Hausaufgabe_6.sh
+  820  ls -la
+  821  pwd
+  822  rm .process_management 
+  823  ls -la
+  824  nano Hausaufgabe_6.sh
+  825  ls -la
+  826  bash Hausaufgabe_6.sh
+  827  ls -la
+  828  cat .process_management 
+  829  nano Hausaufgabe_6.sh
+  830  pwd
+  831  /
+  832  cd opt
+  833  pwd
+  834  cd /
+  835  pwd
+  836  cd opt
+  837  cd 131224-wdm
+  838  cd .illiashenko_toni
+  839  pwd
+  840  nano task_TONI.sh
+  841  chmod +x task_TONI.sh
+  842  export EDITOR=nano
+  843  crontab -e
+  844  crontab -l
+  845  crontab -e
+  846  crontab -l
+  847  ls -la
+  848  pwd
+  849  nano task_TONI.sh
+  850  env
+  851  history
+  852  export OLEKSANDR_P_VARIABLE=210225-ptm
+  853  env
+  854  export OLEKSANDR_P_VARIABLE=210225-ptm
+  855  mkdir -p /opt/210225-ptm/oleksandr_p
+  856  mkdir -p /opt/210225-ptm/OLEKSANDR_P
+  857  touch /opt/210225-ptm/OLEKSANDR_P/.process_management
+  858  date > /opt/210225-ptm/OLEKSANDR_P/.process_management 
+  859  echo "Welcome to Amazon server" >> /opt/210225-ptm/OLEKSANDR_P/.process_management 
+  860  free
+  861  free -h
+  862  free -h | grep "mem" | awk {'print $2'} >> opt/210225-ptm/OLEKSANDR_P/.process_management
+  863  free -h | grep "mem" | awk {'print $2'} >> .process_management
+  864  cat opt/210225-ptm/OLEKSANDP_P/.process_management
+  865  cat /opt/210225-ptm/OLEKSANDP_P/.process_management
+  866  ps -U root --no-headers | wc -l | awk '{print "Root processes:", $1}' >> /opt/210225-ptm/OLEKSANDR_P/.process_management
+  867  echo "ANDREW_VARIABLE=$ANDREW_VARIABLE" >> /opt/ВАША_ГРУППА/ВАШЕ_ИМЯ/.process_management
+  868  echo "ANDREW_VARIABLE=$ANDREW_VARIABLE" >> /opt/210225-ptm/OLEKSANDR_P/.process_management
+  869  ps -eo pid,ppid,cmd | grep "[/]usr/sbin/sshd -D" | awk '{print "PID", $1, "PPID", $2}' >> /opt/ВАША_ГРУППА/ВАШЕ_ИМЯ/.process_management
+  870  ps -eo pid,ppid,cmd | grep "[/]usr/sbin/sshd -D" | awk '{print "PID", $1, "PPID", $2}' >> /opt/210225-ptm/OLEKSANDR_P/.process_management
+  871  cd /opt/210225-ptm/OLEKSANDR_P/
+  872  ls
+  873  cd
+  874  ls -a
+  875  export > .process_management 
+  876  scp username@linux.itcareerhub.de:/opt/ВАША_ГРУППА/ВАШЕ_ИМЯ/.process_management ~/Downloads/
+  877  scp ec2-user@linux.itcareerhub.de:/opt/210225-ptm/OLEKSANDR_P/.process_management ~/Downloads/
+  878  cd /opt/
+  879  ls
+  880  cd 111124-ptm/
+  881  ls
+  882  cd toyli
+  883  mkdir -p /opt/dir1 /opt/dir2
+  884  for i in {1..100}; do touch /opt/dir1/$RANDOM; done
+  885  SRC_DIR="/opt/dir1"
+  886  DST_DIR="/opt/dir2"
+  887  if [ ! -d "$DST_DIR" ]; then mkdir -p "$DST_DIR"; fi
+  888  for file in "$SRC_DIR"/*; do if [ -f "$file" ]; then filename=$(basename "$file"); if [[ "$filename" =~ ^[0-9]+$ ]]; then if [ $((filename % 2)) -eq 0 ]; then mv "$file" "$DST_DIR/"; echo "Moved $filename to $DST_DIR"; else echo "Keeping $filename in $SRC_DIR"; fi; fi; fi; done
+  889  echo "File moving completed."
+  890  chmod +x /opt/move_script.sh
+  891  pwd
+  892  chmod +x /opt/111124-ptm/toyli/move_script.sh
+  893  nano /opt/111124-ptm/toyli/move_script.sh
+  894  chmod +x /opt/move_script.sh
+  895  chmod +x /opt/111124-ptm/toyli/move_script.sh
+  896  /opt/111124-ptm/toyli/move_script.sh
+  897  ls
+  898  open move_script.sh
+  899   move_script.sh
+  900  cat /opt/111124-ptm/toyli/move_script.sh
+  901  cd/opt/131224-wdm/.illiashenko_toni
+  902  cd /opt/131224-wdm/.illiashenko_toni
+  903  wdm
+  904  pwd
+  905  nano sleeper.sh
+  906  chmod +x sleeper.sh
+  907  ./sleeper.sh
+  908  nano sleeper.sh
+  909  ls -la
+  910  nano sleeper.sh
+  911  ls -al
+  912  ls -lah /opt/091224-ptm
+  913  ls -al
+  914  nano 5.mov
+  915  exit
+  916  cd /opt/240125-wde/mark_kozov/
+  917  ls -al
+  918  pwd
+  919  cd /
+  920  cd opt/131224-wdm/.illiashenko_toni
+  921  pwd
+  922  mkdir unsorted_files sorted_files
+  923  ls
+  924  cd unsorted_files
+  925  pwd
+  926  for i in {1..100}; do touch "$RANDOM"; done
+  927  ды
+  928  ls
+  929  cd ..
+  930  nano relocate_even_files.sh
+  931  chmod -x relocate_even_files.sh
+  932  ls
+  933  chmod +x relocate_even_files.sh
+  934  ls
+  935  ./relocate_even_files.sh
+  936  history
+  937  ls
+  938  pwd
+  939  nano relocate_even_files.sh
+  940  df
+  941  free -m
+  942  date
+  943  cd /opt/210225-ptm/platonova/
+  944  ls -a
+  945  cat 21.txt 
+  946  date >> 21.txt
+  947  free -m >> 21.txt
+  948  cat 21.txt 
+  949  date+'%d.%m.%y' >> 21.txt
+  950  date+"%d.%m.%y" >> 21.txt
+  951  date+"%d.%m.%Y" >> 21.txt
+  952  date + "%d.%m.%Y" >> 21.txt
+  953  date --help
+  954  date  "%d.%m.%Y"
+  955  date  %d.%m.%Y
+  956  date %d.%m.%Y
+  957  date "%d.%m.%Y"
+  958  free -m 
+  959  free -m  awk {'print $2'}
+  960  free -m | awk {'print $2'}
+  961  free -m | awk {'print $1'}
+  962  free -m | awk {'print $1, §2'}
+  963  free -m | awk {'print $1', 'print &2'}
+  964  free -m | awk {'print $1, $2'}
+  965  free -m | grep -w Mem |awk {'print $1, $2'}
+  966  free -m | grep -w Mem |awk {'print $1, $2'} >> 21.txt
+  967  cat 21.txt
+  968  cat 21.txt
+  969  ps -ef
+  970  ps -ef | grep root
+  971  ps -ef | grep root | wc -l
+  972  ps -ef | grep root | grep - ec2 | wc -l
+  973  ps -ef | grep root | grep -v ec2 | wc -l
+  974  ps -ef | grep root | grep -v ec2 | wc -l >> 21.txt
+  975  cat 21.txt
+  976  env
+  977  env | grep NIKITA_
+  978  env | grep NIKITA_ >> 21.txt
+  979  cat 21.txt
+  980  ps -ef | grep 'ssh'
+  981  ps -ef | grep 'ssh -D'
+  982  ps -ef | grep 'sshd -D' 
+  983  ps -ef | grep '/usr/sbin/sshd -D' 
+  984  ps -ef | grep '/usr/sbin/sshd -D' -v grep
+  985  ps -ef | grep '/usr/sbin/sshd -D'| -v grep
+  986  ps -ef | grep '/usr/sbin/sshd -D'| grep -v grep
+  987  ps -ef | grep '/usr/sbin/sshd -D'| grep -v grep | awk {print 'PID' $2}
+  988  ps -ef | grep '/usr/sbin/sshd -D'| grep -v grep | awk {'print 'PID' $2'}
+  989  ps -ef | grep '/usr/sbin/sshd -D'| grep -v grep | awk {'print "PID" $2'}
+  990  ps -ef | grep '/usr/sbin/sshd -D'| grep -v grep | awk {'print "PID " $2 " PPD " §3'}
+  991  ps -ef | grep '/usr/sbin/sshd -D'| grep -v grep | awk {'print "PID " $2 " PPD " $3'}
+  992  ps -ef | grep '/usr/sbin/sshd -D'| grep -v grep | awk {'print "PID " $2 " PPD " $3'} >> 21.txt
+  993  cat 21.txt
+  994  ps -ef | grep '/usr/sbin/sshd -D'| grep -v grep | awk '{print "PID", $2, "PPD", $3}' >> 21.txt
+  995  cat 21.txt
+  996  exit
+  997  export IRYNA_VARIABLE=210225-pm
+  998  env
+  999  cd /opt/210225-ptm/platonova/
+ 1000  date+"%d.%m.%Y" >> ./IRYNA/.process_management
+ 1001  mkdir -p ./IRYNA
+ 1002  date+"%d.%m.%Y" >> ./IRYNA/.process_management
+ 1003  date +"%d.%m.%Y" >> ./IRYNA/.process_management
+ 1004  cat process_management
+ 1005  cat IRYNA/.process_management
+ 1006  echo "Welcome to Amazon server " >> IRYNA/.process_management
+ 1007  echo "Общий объем оперативной памяти:" >> IRYNA/.process_management
+ 1008  free -m
+ 1009  free -m | grep Mem | awk '{print $1, $2}'
+ 1010  free -m | grep Mem | awk '{print $1, $2}' >> /IRYNA/.process_management
+ 1011  ls -a
+ 1012  cd IRYNA
+ 1013  ls -a
+ 1014  free -m | grep Mem | awk '{print $1, $2}' >> .process_management
+ 1015  cat .process_management
+ 1016  ps -ef | grep root
+ 1017  ps -ef | grep root | grep -v ec2
+ 1018  ps -ef | grep root | grep -v ec2 | wc -l
+ 1019  ps -ef | grep root | grep -v ec2 | wc -l >> .process_management 
+ 1020  env | grep IRYNA
+ 1021  env | grep IRYNA_ >> .process_management 
+ 1022  cat .process_management 
+ 1023  ps -ef | grep /usr/sbin/sshd -D
+ 1024  ps -ef | grep "/usr/sbin/sshd -D"
+ 1025  ps -ef | grep "/usr/sbin/sshd -D" | grep -v grep
+ 1026  ps -ef | grep "/usr/sbin/sshd -D" | grep -v grep | awk '{print "PID",$2,"PPID",$3}'
+ 1027  ps -ef | grep "/usr/sbin/sshd -D" | grep -v grep | awk '{print "PID",$2,"PPID",$3}' >> .process_management 
+ 1028  cat .process_management 
+ 1029  history >> history.txt

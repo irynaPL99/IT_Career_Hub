@@ -1,0 +1,9 @@
+Sun Mar 16 20:51:33 UTC 2025
+Modified with text editor
+47%
+   2 df -h | grep -w root | awk {'print $5'} >> homework4.txt 
+   3 cat homework4.txt 
+   4 history | tail -3 >> homework4.txt 
+cron:x:16:16:cron:/var/spool/cron:/sbin/nologin
+at:x:25:25:at:/var/spool/cron/atjobs:/sbin/nologin
+11
