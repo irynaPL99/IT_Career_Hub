@@ -2,12 +2,8 @@ MogoDB
 
 
 1)Коллекция imdb : 
-Используя оператор $size , найдите фильмы, написанные 3 сценаристами (writers) и снятые 2 режиссерами (directors)
-
-
->>>>>>>>>>>>>>>>>>>>>
-2)Коллекция bookings: 
-Найдите адрес нахождения автомобиля с vin WME4530421Y135045 по самой последней дате (и времени) final_date
+Используя оператор $size , найдите фильмы, написанные 3 сценаристами (writers)
+и снятые 2 режиссерами (directors)
 
 db.getCollection('imdb').find(
   {
@@ -16,6 +12,23 @@ db.getCollection('imdb').find(
   },
   { title: 1, directors: 1, writers: 1 }
 );
+
+
+>>>>>>>>>>>>>>>>>>>>>
+2)Коллекция bookings: 
+Найдите адрес нахождения автомобиля с vin WME4530421Y135045 по самой последней дате (и времени) final_date
+
+db.getCollection('bookings')
+  .find(
+    { vin: 'WME4530421Y135045' },
+    { vin: 1, final_date: 1, final_address: 1 }
+  )
+  .sort({ final_date: -1 })
+  .limit(1);
+
+ # max final_date:
+final_date: 2017-10-01T19:20:05.000+00:00
+final_address: "Piazza Guido Cavalcanti, 8, 10132 Torino TO"
 
 >>>>>>>>>>>>>>>>>>>>>>>>
 3)Коллекция bookings: 
