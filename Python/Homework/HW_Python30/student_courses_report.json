@@ -1,0 +1,16 @@
+{
+    "total_students": 100,
+    "average_enrollment_age": 27.9,
+    "students_per_course": {
+        "Art": 21,
+        "Biology": 18,
+        "Business": 28,
+        "Chemistry": 16,
+        "Economics": 23,
+        "History": 9,
+        "Linguistics": 23,
+        "Math": 23,
+        "Philosophy": 19,
+        "Physics": 19
+    }
+}
