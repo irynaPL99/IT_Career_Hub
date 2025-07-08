@@ -29,27 +29,25 @@ class BankAccount:
     #    return f"account info: {self.name_owner}, Current balance: {self._current_balance}, history: {self._history}"
 
     def show_balance(self):
-        print(f"Current balance: {self._current_balance}")
+        print(f"Current balance: {self._current_balance:.2f}")
+
+    def _valide_amount(self, amount: float) -> bool:
+        """Check if amount is a valid positive number """
+        if amount <= 0:
+            raise ValueError("Amount must be positive.")
+        return True
 
     def add_deposit(self, amount: float):
-        if amount <= 0:
-            print("Error: Amount must be positive.")
-            return
-
+        self._valide_amount(amount)
         self._current_balance += amount
-        self._history.append(f"Deposit: {amount}")
+        self._history.append(f"Deposit: {amount:.2f}")
 
-    def withdraf_deposit(self, amount):
-        if amount <= 0:
-            print("Error: Amount must be positive.")
-            return
-
+    def withdraw_deposit(self, amount):
+        self._valide_amount(amount)
         if amount > self._current_balance:
-            print("Error: Not enough funds.")
-            return
-
+            raise ValueError("Not enough funds.")
         self._current_balance -= amount
-        self._history.append(f"Withdraw: {amount}")
+        self._history.append(f"Withdraw: {amount:.2f}")
 
 
     # История должна быть доступна через property history только для чтения.
@@ -61,16 +59,32 @@ class BankAccount:
 account = BankAccount("Alica", 150)
 account.show_balance()
 
-account.add_deposit(-1.0) # "Error: Amount must be positive."
+# Deposit
+try:
+    account.add_deposit(-1.0) # "Error: Amount must be positive."
+except Exception as e:
+    print("Error:", e)
 account.show_balance()
 
-account.add_deposit(1.0)
+try:
+    account.add_deposit(1.0)
+except Exception as e:
+    print("Error:", e)
 account.show_balance()
 
-account.withdraf_deposit(200.0) # "Error: Not enough funds."
+
+# withdraw_deposit
+try:
+    account.withdraw_deposit(200.0) # "Error: Not enough funds."
+except Exception as e:
+    print("Error:", e)
 account.show_balance()
 
-account.withdraf_deposit(100.0)
+try:
+    account.withdraw_deposit(100.0)
+except Exception as e:
+    print("Error:", e)
+
 account.show_balance()
 
 #print(account)
