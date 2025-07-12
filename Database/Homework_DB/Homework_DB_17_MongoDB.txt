@@ -1,0 +1,55 @@
+11-07-2025
+Домашнее задание 17
+
+1.Тестовая коллекция в mongo atlas  sample_mflix.theaters
+Найти все кинотеатры в Калифорнии и посчитать их количество 
+
+db.getCollection('theaters').aggregate(
+  [
+    {
+      $match: { 'location.address.state': 'CA' }
+    },
+    { $count: 'count theaters in state ""CA' }
+  ],
+  { maxTimeMS: 60000, allowDiskUse: true }
+);
+
+#169
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+2.Тестовая коллекция в mongo atlas  sample_airbnb.listingsAndReviews
+Найти недвижимость с самым большим количеством спален (bedrooms) и напишите ее название
+ 
+# name "Venue Hotel Old City"
+# bedrooms 20
+
+db.getCollection('listingsAndReviews')
+  .find({}, { name: 1, bedrooms: 1, _id: 0 })
+  .sort({ bedrooms: -1 })
+  .limit(1);
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><
+3.Тестовая коллекция в mongo atlas  sample_airbnb.listingsAndReviews
+Найти недвижимость с самым высоким рейтингом  review_scores_rating при минимальном количестве отзывов 50 (number_of_reviews) и напишите ее название 
+
+# name "Turtle Bay Resort 1 Bedroom Condo"
+# number_of_reviews 50
+# review_scores_rating 98
+
+db.getCollection('listingsAndReviews')
+  .find(
+    { number_of_reviews: { $gte: 50 } },
+    {
+      _id: 0,
+      name: 1,
+      number_of_reviews: 1,
+      'review_scores.review_scores_rating': 1
+    }
+  )
+  .sort({
+    review_scores_rating: -1,
+    number_of_reviews: 1
+  })
+  .limit(1);
+
