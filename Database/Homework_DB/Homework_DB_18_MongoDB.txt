@@ -1,0 +1,149 @@
+12-07-2025
+Домашнее задание 18
+
+1.Из коллекции sample_airbnb.listingsAndReviews найдите 
+среднюю цену за сутки проживания на Гавайских островах. 
+
+Островов несколько, поэтому либо используем 
+{'address.location': {$geoWithin: { $centerSphere …. 
+
+Либо перечисляем все возможные острова в поле market
+
+
+Подсказка - нам понадобится 2 этапа агрегации : $match и $group
+# variant 1
+# 586 docs !!!
+# avg_price 229.17
+
+db.getCollection('listingsAndReviews').aggregate(
+  [
+    {
+      $match: {
+        'address.location.coordinates': {
+          $geoWithin: {
+            $geometry: {
+              type: 'Polygon',
+              coordinates: [
+                [
+                  [
+                    -160.390625,
+                    18.812717856407776
+                  ],
+                  [
+                    -154.5234375,
+                    18.812717856407776
+                  ],
+                  [
+                    -154.5234375,
+                    22.105998799750566
+                  ],
+                  [
+                    -160.390625,
+                    22.105998799750566
+                  ],
+                  [
+                    -160.390625,
+                    18.812717856407776
+                  ]
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      $group: {
+        _id: null,
+        avg_price: { $avg: '$price' }
+      }
+    },
+    {
+      $project: {
+        _id: 0,
+        avg_price: { $round: ['$avg_price', 2] }
+      }
+    }
+  ],
+  { maxTimeMS: 60000, allowDiskUse: true }
+);
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+# variant 2, List von Insel (перечисляем все возможные острова в поле market):
+# 153 docs !!!
+# avg_price 286.59
+
+db.getCollection('listingsAndReviews').aggregate(
+  [
+    {
+      $match: {
+        'address.market': {
+          $in: [
+            'Hawaiʻi',
+            'Maui',
+            'Oʻahu',
+            'Kauaʻi',
+            'Molokaʻi',
+            'Lānaʻi',
+            'Niʻihau',
+            'Kahoʻolawe'
+          ]
+        }
+      }
+    },
+    {
+      $group: {
+        _id: null,
+        avg_price: { $avg: '$price' }
+      }
+    },
+    {
+      $project: {
+        _id: 0,
+        avg_price: { $round: ['$avg_price', 2] }
+      }
+    }
+  ],
+  { maxTimeMS: 60000, allowDiskUse: true }
+);
+
+
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><
+2. Подсчитайте в коллекции sample_mflix.movies, сколько фильмов имеют imdb рейтинг выше 8 и выходили в период с 2015 до 2023 года (используем year) 
+# 50 docs
+
+db.getCollection('movies').aggregate(
+  [
+    {
+      $match: {
+        'imdb.rating': { $gt: 8 },
+        type: 'movie',
+        year: { $gte: 2015, $lte: 2023 }
+      }
+    },
+    { $count: 'total:' }
+  ],
+  { maxTimeMS: 60000, allowDiskUse: true }
+);
+
+
+
+>>> Какой из них имеет самый высокий рейтинг ?
+
+# year: 2015
+# imdb.rating 9.4
+# type:"movie"
+
+db.getCollection('movies')
+  .find(
+    {
+      'imdb.rating': { $gt: 8 },
+      type: 'movie',
+      year: { $gte: 2015, $lte: 2023 }
+    },
+    { 'imdb.rating': 1, type: 1, _id: 0, year: 1 }
+  )
+  .sort({ 'imdb.rating': -1 })
+  .limit(1);
