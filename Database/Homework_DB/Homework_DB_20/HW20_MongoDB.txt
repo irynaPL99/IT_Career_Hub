@@ -1,0 +1,49 @@
+22-07-2025
+
+Работаем с коллекцией sample_data.restaurants, подключение:
+mongodb://ich1:password@3.67.41.21:27017/?readPreference=primary&ssl=false&authMechanism=DEFAULT&authSource=ich
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+6. Найти рестораны на 'Staten Island' в названии которых есть слово pizza (Pizza и PIZZA тоже считаются)
+
+# 66 docs
+db.getCollection('restaurants').aggregate(
+  [
+    {
+      $match: {
+        borough: 'Staten Island',
+        name: {
+          $regex: '\\bpizza\\b',
+          $options: 'i'
+        }
+      }
+    }
+  ],
+  { maxTimeMS: 60000, allowDiskUse: true }
+);
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+7.Выведите названия 5 лучших (ресторанов !) по среднему значению отзывов ( $avg: "$grades.score")
+
+db.getCollection('restaurants').aggregate(
+  [
+    { $unwind: { path: '$grades' } },
+    {
+      $group: {
+        _id: '$_id',
+        name: { $first: '$name' },
+        avg_score: { $avg: '$grades.score' }
+      }
+    },
+    {
+      $project: {
+        _id: 0,
+        name: 1,
+        avg_score: { $round: ['$avg_score', 2] }
+      }
+    },
+    { $sort: { avg_score: -1 } },
+    { $limit: 5 }
+  ],
+  { maxTimeMS: 60000, allowDiskUse: true }
+);
