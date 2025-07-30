@@ -77,13 +77,15 @@ def print_searches_table(searches, title):
         search_type = search["search_type"]
         params = search["params"]
         details = search.get("count", search.get("timestamp", ""))
-
+        # Переменная details содержит либо count (для популярных поисков),
+        # либо timestamp (для последних поисков).
         if "POPULAR" not in title and details:
             try:
-                dt = datetime.fromisoformat(details)
-                details = dt.strftime("%Y-%m-%d %H:%M:%S.%f")[:-4]
+                dt = datetime.fromisoformat(details) #->dt станет объектом datetime(2025, 7, 30, 21, 16)
+                details = dt.strftime("%Y-%m-%d %H:%M:%S.%f")[:-4] # обрезает последние 4 символа mksec
             except ValueError:
-                pass
+                # pass    # Пустая инструкция, которая игнорирует ошибку и оставляет details без изменений.
+                print(f"\033[93mWarning: Invalid timestamp format in details: {details}\033[0m")
 
         if search_type == "keyword":
             #params_str = f"keyword: {params.get('keyword', '')}"

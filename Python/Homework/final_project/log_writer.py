@@ -13,13 +13,18 @@ def connect_mongo():
         client = MongoClient(
             "mongodb://ich_editor:verystrongpassword"
             "@mongo.itcareerhub.de/?readPreference=primary"
-            "&ssl=false&authMechanism=DEFAULT&authSource=ich_edit"
+            "&ssl=false&authMechanism=DEFAULT&authSource=ich_edit",
+            connect=True
         )
         db = client["ich_edit"]
         collection = db["final_project_210225ptm_Platonova"]
         return collection
     except Exception as e:
         raise Exception(f"Cannot connect to MongoDB: {e}")
+    # В pymongo 4.x подключение к MongoDB может быть отложенным (lazy connection).
+    # Это означает, что MongoClient не проверяет подключение сразу при создании объекта,
+    # а делает это только при первом запросе к базе данных
+    # (например, при вызове collection.insert_one в log_search).
 
 
 def log_search(search_type: str, params: dict, results_count: int):
