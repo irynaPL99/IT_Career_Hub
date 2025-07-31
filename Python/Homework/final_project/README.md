@@ -29,12 +29,12 @@ This is a console application for searching movies in the Sakila MySQL database.
 
 3. The file structure of the project:
 movie_search_app/
-|- formatter.py
-|- log_stats.py
-|- log_writer.py
-|- main.py
-|- mysql_connector.py
-|- README.md
+├── formatter.py
+├── log_stats.py
+├── log_writer.py
+├── main.py
+├── mysql_connector.py
+└── README.md
 
 + formatter.py:
 Python file to show data as tables.
