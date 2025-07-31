@@ -13,11 +13,11 @@ def print_films_table(films):       # films = result
         return
 
     print("\nSearch results (only 10 per page):")
-    print(f"* title - release_year - genre")
-    print(40*"-")
+    print(50 * "=")
+    print(f"{'genre':<12} {'release year':<12}     {'title'}")
+    print(50*"-")
     for i, (title, release_year, genre) in enumerate(films, start=1):
-        #print(f"{i}. {title} - {release_year} - {genre}")
-        print(f"* {title} - {release_year} - {genre}")
+        print(f"* {genre:<12}   {str(release_year):<12} {title} ")
 
 
 def print_genres_with_details(genres):
@@ -31,14 +31,13 @@ def print_genres_with_details(genres):
         return
 
     print("\nAVAILABLE GENRES:")
-    print(60 * "=")
-    print("Genre: \tMin - Max release year:  \tCount of films:")
-    print(60 * "-")
+    print(50 * "=")
+    print(f"{'Genre':<16} {'Min - Max year':<16} Count of films")
+    print(50 * "-")
     for row in genres:
         min_year = str(row[1]) if row[1] is not None else "N/A"
         max_year = str(row[2]) if row[2] is not None else "N/A"
-        print(f"* {row[0]}:\t{min_year} - {max_year} \t\tCount of films: {row[3]}")
-
+        print(f"* {row[0]:<16} {min_year + ' - ' + max_year:<16}  ({row[3]})")
 
 def print_searches_table(searches, title):
     """Print searches as lines with
@@ -66,12 +65,11 @@ def print_searches_table(searches, title):
 
     # Print title and rows
     print(f"\n{title}:")
-    print(70 * "=")
-    #print(f"search_type - params of searching \t-> \t(count of query's or date(time)):")
+    print(60 * "=")
     header = "search_type: (request_count) - search_params" if "POPULAR" in title else \
         "search_type: \t\t(date_time) \t\t\t- search_params "
     print(header)
-    print(70 * "-")
+    print(60 * "-")
 
     for search in searches:
         search_type = search["search_type"]
@@ -82,7 +80,7 @@ def print_searches_table(searches, title):
         if "POPULAR" not in title and details:
             try:
                 dt = datetime.fromisoformat(details) #->dt станет объектом datetime(2025, 7, 30, 21, 16)
-                details = dt.strftime("%Y-%m-%d %H:%M:%S.%f")[:-4] # обрезает последние 4 символа mksec
+                details = dt.strftime("%Y-%m-%d %H:%M:%S.%f")[:-4] # обрезает последние 4 символа msec
             except ValueError:
                 # pass    # Пустая инструкция, которая игнорирует ошибку и оставляет details без изменений.
                 print(f"\033[93mWarning: Invalid timestamp format in details: {details}\033[0m")
@@ -97,6 +95,6 @@ def print_searches_table(searches, title):
 
         #print(f"{search_type} \t- {params_str} \t\t\t\t ({details})")
         print(f"{search_type}:\t\t({details}) \t- {params_str}")
-    print("\033[93mDone ...Exit to statistics menu...\033[0m")
+    print("\033[93mDone! Exit to statistics menu...\033[0m")
 
 

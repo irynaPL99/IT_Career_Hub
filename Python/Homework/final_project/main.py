@@ -13,13 +13,13 @@ def show_menu():
     Output: None (prints menu)
     """
     print()
-    print(70*"=")
+    print(50*"=")
     print("main menu: \t********* MOVIE SEARCH: *********")
-    print(70*"=")
-    print("1. Search by KEYWORD (Выполнить поиск по ключевому слову)")
-    print("2. Search by GENRE and YEAR (Выполнить поиск по жанру и диапазону годов)")
-    print("3. Show POPULAR or RECENT searches (Посмотреть популярные или последние запросы)")
-    print(70 * "-")
+    print(50*"=")
+    print("1. Search by KEYWORD")
+    print("2. Search by GENRE and YEAR")
+    print("3. Show POPULAR or RECENT searches")
+    print(50 * "-")
     print("0. Exit")
 
 def show_stats_submenu():
@@ -29,11 +29,11 @@ def show_stats_submenu():
     Output: String (user's choice: '0', '1', or '2')
     """
     print("\nChoose please STATISTICS TYPE:")
-    print(70 * "=")
-    print("1. Show POPULAR searches (Посмотреть популярные запросы)")
-    print("2. Show RECENT searches (Посмотреть последние запросы)")
-    print(70 * "-")
-    print("0. Exit to main menu (Выход в основное меню)")
+    print(50 * "=")
+    print("1. Show POPULAR searches")
+    print("2. Show RECENT searches")
+    print(50 * "-")
+    print("0. Exit to main menu")
     return input("\033[92mEnter choice (1-2) or '0' for exit to main menu: \033[0m")
 
 def main():
@@ -44,7 +44,7 @@ def main():
     """
     while True:
         show_menu()
-        choice = input("\033[92mEnter your choice (1-3 or '0' for exit):\033[0m")
+        choice = input("\033[92mEnter your choice (1-3 or '0' for exit): \033[0m")
 
         try:
             choice = int(choice)
@@ -61,7 +61,7 @@ def main():
                     try:
                         results = mysql_connector.search_by_keyword(keyword, offset)
                         if not results:
-                            print("\033[93mNo more results found! ...Exit to main menu...\033[0m")
+                            print("\033[93mNo more results found! Exit to main menu...\033[0m")
                             break
 
                         # print table (title - release_year - genre):
@@ -146,7 +146,7 @@ def main():
                                 genre, year_from, year_to, offset
                             )
                             if not results:
-                                print("\033[93mNo more results found! ...Exit to main menu....\033[0m")
+                                print("\033[93mNo more results found! Exit to main menu...\033[0m")
                                 break
 
                             # print table (title film, release_year, genre):
@@ -186,7 +186,7 @@ def main():
                                 searches = log_stats.get_popular_searches()
                                 #print(searches)
                                 # print top 5 popular searches:
-                                formatter.print_searches_table(searches, "TOP 5 POPULAR SEARCHES (популярные запросы)")
+                                formatter.print_searches_table(searches, "TOP 5 POPULAR SEARCHES")
                             except Exception as e:
                                 print(f"\033[91mDatabase error: {e}\033[0m")
 
@@ -199,8 +199,7 @@ def main():
                                 searches = log_stats.get_recent_searches()
                                 #print(searches)
                                 # print 5 unique searches:
-                                formatter.print_searches_table(searches, "LAST UNIQUE SEACHES "
-                                                                         "(последние уникальные запросы)")
+                                formatter.print_searches_table(searches, "LAST UNIQUE SEACHES")
                             except Exception as e:
                                 print(f"\033[91mDatabase error: {e}\033[0m")
                         elif stats_choice == 0:
@@ -213,7 +212,7 @@ def main():
                     except Exception as e:
                         print(f"\033[91mDatabase error: {e}\033[0m")
             elif choice == 0:
-                print("\033[93mYour choice is 'Exit'...Goodbye!\033[0m")
+                print("\033[93mYour choice is 'Exit'... Goodbye!\033[0m")
                 break
             else:
                 print("\033[91mInvalid choice! Choose: 1-3 or '0' for exit\033[0m")

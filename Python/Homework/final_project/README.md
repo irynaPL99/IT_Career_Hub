@@ -26,7 +26,43 @@ This is a console application for searching movies in the Sakila MySQL database.
 2. Set up MySQL and MongoDB:
    - Install MySQL and load the Sakila database.
    - Install MongoDB and ensure it is running.
-3. 
+
+3. The file structure of the project:
+movie_search_app/
+├── formatter.py
+├── log_stats.py
+├── log_writer.py
+├── main.py
+├── mysql_connector.py
+└── README.md
+
++ formatter.py:
+Python file to show data as tables.
+Prints movies, genres, and search stats (popular or recent).
+Makes output easy to read with headers and formatting.
+
++ log_stats.py:
+Python file to get search stats from MongoDB.
+Shows top 5 popular searches and last 5 unique searches.
+
++ log_writer.py:
+Python file to save search queries to MongoDB.
+Logs search type, parameters, and total number of matching movies.
+
++ main.py:
+Python file with the main program.
+Shows menu, handles user input, and runs searches.
+Calls other files to search, log, and show results.
+
++ mysql_connector.py:
+Python file to connect to MySQL (Sakila database).
+Searches movies by keyword or genre/year and counts total matches.
+
++ README.md:
+Markdown file with project info.
+Explains how to install, use, and what the app does.
+Includes example output and setup steps.
+
 4. Run the app:
 
    ```bash
@@ -60,9 +96,9 @@ If the database is modified to include genres like `New` or years like `1990`, t
 ```
 main menu: ********* MOVIE SEARCH: *********
 ======================================================================
-1. Search by KEYWORD (Выполнить поиск по ключевому слову)
-2. Search by GENRE and YEAR (Выполнить поиск по жанру и диапазону годов)
-3. Show POPULAR or RECENT searches (Посмотреть популярные или последние запросы)
+1. Search by KEYWORD
+2. Search by GENRE and YEAR
+3. Show POPULAR or RECENT searches
 ----------------------------------------------------------------------
 0. Exit
 Enter your choice (1-3 or '0' for exit): 1
@@ -71,41 +107,38 @@ Your choice is 'Search by KEYWORD'. Enter keyword: age
 Start searching...
 
 Search results (only 10 per page):
-* title - release_year - genre
-----------------------------------------
-* AGENT TRUMAN - 2023 - Foreign
-* ARMAGEDDON LOST - 2012 - Sci-Fi
-* BERETS AGENT - 1998 - Action
-* BIRDCAGE CASPER - 2022 - Music
-* DAISY MENAGERIE - 2002 - Sci-Fi
-* DOLLS RAGE - 2016 - Sci-Fi
-* GENTLEMEN STAGE - 2020 - Foreign
-* GRINCH MASSAGE - 2023 - Games
-* HOOSIERS BIRDCAGE - 2022 - Foreign
-* HOURS RAGE - 2007 - New
+==================================================
+genre        release year     title
+--------------------------------------------------
+* Foreign        2023         AGENT TRUMAN 
+* Sci-Fi         2012         ARMAGEDDON LOST 
+* Action         1998         BERETS AGENT 
+* Music          2022         BIRDCAGE CASPER 
+* Sci-Fi         2002         DAISY MENAGERIE 
+* Sci-Fi         2016         DOLLS RAGE 
+* Foreign        2020         GENTLEMEN STAGE 
+* Games          2023         GRINCH MASSAGE 
+* Foreign        2022         HOOSIERS BIRDCAGE 
+* New            2007         HOURS RAGE 
 Show next 10 results? ('y'/'Y' - continue, another - exit to main menu...): n
 Your choice is 'exit to main menu'...
 
 main menu: ********* MOVIE SEARCH: *********
-======================================================================
-1. Search by KEYWORD (Выполнить поиск по ключевому слову)
-2. Search by GENRE and YEAR (Выполнить поиск по жанру и диапазону годов)
-3. Show POPULAR or RECENT searches (Посмотреть популярные или последние запросы)
-----------------------------------------------------------------------
+==================================================
+1. Search by KEYWORD
+2. Search by GENRE and YEAR
+3. Show POPULAR or RECENT searches
+--------------------------------------------------
 0. Exit
 Enter your choice (1-3 or '0' for exit): 2
 
 AVAILABLE GENRES:
-============================================================
-Genre: 	Min - Max release year:  	Count of films:
-------------------------------------------------------------
-* Action:	1990 - 2025 		Count of films: 64
-* Animation:	1990 - 2025 		Count of films: 66
-* Children:	1990 - 2025 		Count of films: 60
-* Classics:	1990 - 2025 		Count of films: 57
-* Comedy:	1990 - 2024 		Count of films: 58
-* Documentary:	1990 - 2025 		Count of films: 68
-* Drama:	1990 - 2025 		Count of films: 62
+==================================================
+Genre            Min - Max year   Count of films
+--------------------------------------------------
+* Action           1990 - 2025       (64)
+* Animation        1990 - 2025       (66)
+* Children         1990 - 2025       (60)
 ...
 Enter genre (insensitive): action
 Enter start year (or press Enter for min release year): 
@@ -123,33 +156,35 @@ Show next 10 results? ('y'/'Y' - continue, another - exit to main menu...): y
 Searching next 10 results...
 
 Search results (only 10 per page):
-* title - release_year - genre
-----------------------------------------
-* CASUALTIES ENCINO - 2007 - Action
-* CELEBRITY HORN - 2021 - Action
-* CLUELESS BUCKET - 1991 - Action
+==================================================
+genre        release year     title
+--------------------------------------------------
+* Action         1994         AMADEUS HOLY 
+* Action         1994         AMERICAN CIRCUS 
+* Action         1998         ANTITRUST TOMATOES 
+* Action         2011         ARK RIDGEMONT 
 ...
 Show next 10 results? ('y'/'Y' - continue, another - exit to main menu...):  n
 Your choice is 'exit to main menu'...
 
 main menu: ********* MOVIE SEARCH: *********
-======================================================================
-1. Search by KEYWORD (Выполнить поиск по ключевому слову)
-2. Search by GENRE and YEAR (Выполнить поиск по жанру и диапазону годов)
-3. Show POPULAR or RECENT searches (Посмотреть популярные или последние запросы)
-----------------------------------------------------------------------
+=====================================================
+1. Search by KEYWORD 
+2. Search by GENRE and YEAR 
+3. Show POPULAR or RECENT searches
+-----------------------------------------------------
 0. Exit
 Enter your choice (1-3 or '0' for exit): 3
 
 Choose please STATISTICS TYPE:
-============================================================
-1. Show POPULAR searches (Посмотреть популярные запросы)
-2. Show RECENT searches (Посмотреть последние запросы)
-------------------------------------------------------------
-0. Exit to main menu (Выход в основное меню)
+======================================================
+1. Show POPULAR searches 
+2. Show RECENT searches
+------------------------------------------------------
+0. Exit to main menu
 Enter choice (1-2) or '0' for exit to main menu:  2
 
-LAST UNIQUE SEARCHES (последние уникальные запросы):
+LAST UNIQUE SEARCHES:
 ======================================================================
 search_type: 		(date_time) 		- search_params 
 ----------------------------------------------------------------------
@@ -157,17 +192,17 @@ genre_year:		(2025-07-30 18:03:21.58) 	- 'Action', 1990-2025
 keyword:		(2025-07-30 17:00:03.58) 	- 'mill'
 keyword:		(2025-07-30 16:57:34.39) 	- 'lion'
 genre_year:		(2025-07-30 16:42:58.31) 	- 'New', 1990-2025
-Done ...Exiting to statistics menu...
+Done! Exiting to statistics menu...
 
 Choose please STATISTICS TYPE:
 ============================================================
-1. Show POPULAR searches (Посмотреть популярные запросы)
-2. Show RECENT searches (Посмотреть последние запросы)
+1. Show POPULAR searches 
+2. Show RECENT searches 
 ------------------------------------------------------------
-0. Exit to main menu (Выход в основное меню)
+0. Exit to main menu 
 Enter choice (1-2) or '0' for exit to main menu: 1
 
-TOP 5 POPULAR SEARCHES (популярные запросы):
+TOP 5 POPULAR SEARCHES:
 ======================================================================
 search_type: (request_count) - search_params
 ----------------------------------------------------------------------
@@ -176,23 +211,23 @@ genre_year:		(3) 	- 'New', 1990-1990
 genre_year:		(2) 	- 'New', 1990-2025
 keyword:		(1) 	- 'mill'
 keyword:		(1) 	- 'lion'
-Done ...Exit to statistics menu...
+Done! Exit to statistics menu...
 
 Choose please STATISTICS TYPE:
 ============================================================
-1. Show POPULAR searches (Посмотреть популярные запросы)
-2. Show RECENT searches (Посмотреть последние запросы)
+1. Show POPULAR searches
+2. Show RECENT searches
 ------------------------------------------------------------
-0. Exit to main menu (Выход в основное меню)
+0. Exit to main menu
 Enter choice (1-2) or '0' for exit to main menu: 0
 
-======================================================================
+==========================================================
 main menu: 	********* MOVIE SEARCH: *********
-======================================================================
-1. Search by KEYWORD (Выполнить поиск по ключевому слову)
-2. Search by GENRE and YEAR (Выполнить поиск по жанру и диапазону годов)
-3. Show POPULAR or RECENT searches (Посмотреть популярные или последние запросы)
-----------------------------------------------------------------------
+==========================================================
+1. Search by KEYWORD
+2. Search by GENRE and YEAR
+3. Show POPULAR or RECENT searches
+----------------------------------------------------------
 0. Exit
 Enter your choice (1-3 or '0' for exit):0
 
