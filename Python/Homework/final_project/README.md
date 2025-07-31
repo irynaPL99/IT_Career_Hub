@@ -29,12 +29,12 @@ This is a console application for searching movies in the Sakila MySQL database.
 
 3. The file structure of the project:
 movie_search_app/
-├── formatter.py
-├── log_stats.py
-├── log_writer.py
-├── main.py
-├── mysql_connector.py
-└── README.md
+|- formatter.py
+|- log_stats.py
+|- log_writer.py
+|- main.py
+|- mysql_connector.py
+|- README.md
 
 + formatter.py:
 Python file to show data as tables.
@@ -95,11 +95,11 @@ If the database is modified to include genres like `New` or years like `1990`, t
 
 ```
 main menu: ********* MOVIE SEARCH: *********
-======================================================================
+===================================================
 1. Search by KEYWORD
 2. Search by GENRE and YEAR
 3. Show POPULAR or RECENT searches
-----------------------------------------------------------------------
+---------------------------------------------------
 0. Exit
 Enter your choice (1-3 or '0' for exit): 1
 

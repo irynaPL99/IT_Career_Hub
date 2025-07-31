@@ -21,11 +21,6 @@ def connect_mongo():
         return collection
     except Exception as e:
         raise Exception(f"Cannot connect to MongoDB: {e}")
-    # В pymongo 4.x подключение к MongoDB может быть отложенным (lazy connection).
-    # Это означает, что MongoClient не проверяет подключение сразу при создании объекта,
-    # а делает это только при первом запросе к базе данных
-    # (например, при вызове collection.insert_one в log_search).
-
 
 def log_search(search_type: str, params: dict, results_count: int):
     """Save search query to MongoDB.
