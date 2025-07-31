@@ -146,11 +146,13 @@ Enter end year (or press Enter for max release year):
 Starting search...
 
 Search results (only 10 per page):
-* title - release_year - genre
-----------------------------------------
-* AMADEUS HOLY - 1994 - Action
-* AMERICAN CIRCUS - 1994 - Action
-* ANTITRUST TOMATOES - 1998 - Action
+==================================================
+genre        release year     title
+--------------------------------------------------
+* Action         1994         AMADEUS HOLY 
+* Action         1994         AMERICAN CIRCUS 
+* Action         1998         ANTITRUST TOMATOES 
+* Action         2011         ARK RIDGEMONT 
 ...
 Show next 10 results? ('y'/'Y' - continue, another - exit to main menu...): y
 Searching next 10 results...
@@ -159,10 +161,9 @@ Search results (only 10 per page):
 ==================================================
 genre        release year     title
 --------------------------------------------------
-* Action         1994         AMADEUS HOLY 
-* Action         1994         AMERICAN CIRCUS 
-* Action         1998         ANTITRUST TOMATOES 
-* Action         2011         ARK RIDGEMONT 
+* Action         2007         CASUALTIES ENCINO 
+* Action         2021         CELEBRITY HORN 
+* Action         1991         CLUELESS BUCKET 
 ...
 Show next 10 results? ('y'/'Y' - continue, another - exit to main menu...):  n
 Your choice is 'exit to main menu'...
@@ -186,12 +187,13 @@ Enter choice (1-2) or '0' for exit to main menu:  2
 
 LAST UNIQUE SEARCHES:
 ======================================================================
-search_type: 		(date_time) 		- search_params 
-----------------------------------------------------------------------
-genre_year:		(2025-07-30 18:03:21.58) 	- 'Action', 1990-2025
-keyword:		(2025-07-30 17:00:03.58) 	- 'mill'
-keyword:		(2025-07-30 16:57:34.39) 	- 'lion'
-genre_year:		(2025-07-30 16:42:58.31) 	- 'New', 1990-2025
+search_type      date_time                 search_params
+------------------------------------------------------------
+genre_year       2025-07-31 21:40:44.92    'Action', 1990-2025
+genre_year       2025-07-31 21:12:38.03    'New', 1990-2025
+keyword          2025-07-31 21:12:14.05    'age'
+keyword          2025-07-31 20:22:25.79    'life'
+keyword          2025-07-31 20:19:55.99    'mil'
 Done! Exiting to statistics menu...
 
 Choose please STATISTICS TYPE:
@@ -204,13 +206,13 @@ Enter choice (1-2) or '0' for exit to main menu: 1
 
 TOP 5 POPULAR SEARCHES:
 ======================================================================
-search_type: (request_count) - search_params
-----------------------------------------------------------------------
-keyword:		(4) 	- 'age'
-genre_year:		(3) 	- 'New', 1990-1990
-genre_year:		(2) 	- 'New', 1990-2025
-keyword:		(1) 	- 'mill'
-keyword:		(1) 	- 'lion'
+search_type      request_count             search_params
+------------------------------------------------------------
+keyword          9                         'mil'
+keyword          9                         'age'
+genre_year       6                         'New', 1990-2025
+keyword          4                         'lion'
+genre_year       3                         'Action', 1990-2025
 Done! Exit to statistics menu...
 
 Choose please STATISTICS TYPE:

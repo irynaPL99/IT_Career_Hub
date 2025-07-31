@@ -66,8 +66,12 @@ def print_searches_table(searches, title):
     # Print title and rows
     print(f"\n{title}:")
     print(60 * "=")
-    header = "search_type: (request_count) - search_params" if "POPULAR" in title else \
-        "search_type: \t\t(date_time) \t\t\t- search_params "
+    #header = "search_type: (request_count) - search_params" if "POPULAR" in title else \
+    #    "search_type: \t\t(date_time) \t\t\t- search_params "
+
+    header = f"{'search_type':<16} {'request_count':<24}  search_params" if "POPULAR" in title else \
+        f"{'search_type':<16} {'date_time':<24}  search_params"
+
     print(header)
     print(60 * "-")
 
@@ -94,7 +98,8 @@ def print_searches_table(searches, title):
             params_str = str(params)
 
         #print(f"{search_type} \t- {params_str} \t\t\t\t ({details})")
-        print(f"{search_type}:\t\t({details}) \t- {params_str}")
+        #print(f"{search_type}:\t\t({details}) \t- {params_str}")
+        print(f"{search_type:<16} {details:<24}  {params_str}")
     print("\033[93mDone! Exit to statistics menu...\033[0m")
 
 
