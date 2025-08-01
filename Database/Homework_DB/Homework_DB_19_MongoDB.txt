@@ -1,0 +1,120 @@
+HW 19 MongoDB, 01-08-2025
+
+Из базы данных ich работаем с коллекцией ich.Spotify_Youtube:
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+1.Найдите трек с наивысшими показателями  Danceability и Energy. 
+
+
+#Danceability = 0.975
+#Energy = 0.711
+
+db.getCollection('Spotify_Youtube')
+  .find({})
+  .sort({ Danceability: -1, Energy: -1 })
+  .limit(1);
+
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+2.У какого трека (но не compilation) самая большая длительность? 
+
+# Duration_ms = 4676058
+
+db.getCollection('Spotify_Youtube')
+  .find({})
+  .sort({ Duration_ms: -1 })
+  .limit(1);
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+3.В каком одном альбоме самое большее количество треков? 
+
+# Album name = "Greatest Hits"
+# count_track = 30
+
+
+db.getCollection('Spotify_Youtube').aggregate(
+  [
+    {
+      $group: {
+        _id: '$Album',
+        count_track: { $sum: 1 }
+      }
+    },
+    { $sort: { count_track: -1 } },
+    { $limit: 1 },
+    {
+      $project: {
+        _id: 0,
+        'Album name': '$_id',
+        count_track: 1
+      }
+    }
+  ],
+  { maxTimeMS: 60000, allowDiskUse: true }
+);
+
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+4.Сколько просмотров видео на youtube у трека с самым высоким количеством прослушиваний на spotify (Stream)? 
+
+# Views = 674164500
+
+# variant 1:
+db.getCollection('Spotify_Youtube')
+  .find(
+    {},
+    {
+      _id: 0,
+      Artist: 1,
+      Track: 1,
+      Stream: 1,
+      Album: 1,
+      Views: 1
+    }
+  )
+  .sort({ Stream: -1 })
+  .limit(1);
+
+
+# variant 2:
+db.getCollection('Spotify_Youtube').aggregate(
+  [
+    { $sort: { Stream: -1 } },
+    { $limit: 1 },
+    {
+      $project: {
+        _id: 0,
+        Artist: 1,
+        Album: 1,
+        Track: 1,
+        Stream: 1,
+        Views: 1
+      }
+    }
+  ],
+  { maxTimeMS: 60000, allowDiskUse: true }
+);
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<
+5.Экспортируйте 20 самых популярных (прослушивания или просмотры) треков по версиям youtube и spotify и импортируйте в базу ich_edit их 
+с именами top20youtube и top20spotify, 
+и добавьте им свои имена для уникальности. 
+
+# ich_edit.top20youtube_platonova
+
+db.getCollection('Spotify_Youtube')
+  .find({})
+  .sort({ Views: -1 })
+  .limit(20);
+
+>>>>>>>>>>>>>>>>>>>>>>>>
+# ich_edit.top20spotify_platonova
+
+db.getCollection('Spotify_Youtube')
+  .find({})
+  .sort({ Stream: -1 })
+  .limit(20);
+
