@@ -51,18 +51,6 @@ def print_searches_table(searches, title):
         print("\033[93mNo searches found! Exit to statistics menu...\033[0m")
         return
 
-    rows = []
-    # searches (list of dicts): List with search_type, params(dict), count/timestamp
-    # search = {"search_type": "keyword", "params": {"keyword": "age"}, "timestamp": "2025-07-25T21:34:49.147597"}
-    for search in searches:
-        #params = ", ".join(f"{type_s}: '{key}'" for type_s, key in search["params"].items())
-        params = ", ".join(f"'{key}'" for type_s, key in search["params"].items())
-        details = search.get("count", search.get("timestamp", ""))
-        # пытаемся получить значение по ключу "count" из словаря search.
-        # если ключ "count" отсутствует, тогда попытаться получить "timestamp".
-        # Если и "timestamp" нет, тогда вернуть "" (пусто).
-        rows.append([search["search_type"], params, str(details)])
-
     # Print title and rows
     print(f"\n{title}:")
     print(60 * "=")
