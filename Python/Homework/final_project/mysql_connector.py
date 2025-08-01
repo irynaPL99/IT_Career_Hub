@@ -151,7 +151,7 @@ def count_by_genre_and_year(genre, year_from, year_to):
         JOIN category AS c ON fc.category_id = c.category_id
         WHERE c.name = %s
     """
-    params = [genre]
+    params = [genre]    # -> use in cursor.execute(query, params)
     if year_from:
         query += " AND f.release_year >= %s"
         params.append(year_from)
@@ -162,4 +162,4 @@ def count_by_genre_and_year(genre, year_from, year_to):
     total = cursor.fetchone()[0]
     cursor.close()
     conn.close()
-    return total
+    return total    # Integer (total number of matching films)

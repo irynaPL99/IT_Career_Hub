@@ -86,6 +86,7 @@ def main():
                 try:
                     # def return List of tuples (genre, min_year, max_year, film_count):
                     genres_data = mysql_connector.get_genres_with_details()
+                    # expample genres_data:[('Action', 1990, 2025, 64), ('Animation', 1990, 2025, 66), ...]
                     if not genres_data:
                         print("\033[91mError: Cannot load genres!\033[0m")
                         continue
@@ -99,7 +100,8 @@ def main():
                         print("\033[91mError: Genre cannot be empty!\033[0m")
                         continue
 
-                    # Get valid genres (insensitive) from genres_data:
+                    # Get valid genres (insensitive) from
+                    # genres_data (List of tuples (genre, min_year, max_year, film_count):
                     valid_genres = [row[0] for row in genres_data]
                     genre_lower = genre.lower()     # insensitive (action, Action, ACTION)
                     if genre_lower not in [g.lower() for g in valid_genres]:
@@ -108,9 +110,12 @@ def main():
                         continue
 
                     # Find the original genre (case-sensitive) for further use:
-                    # находит кортеж жанра из genres_data, соответствующий введенному жанру (сравнение в нижнем регистре)
+                    # находит кортеж жанра из genres_data (list(genre, min_year, max_year, film_count)),
+                    # соответствующий введенному жанру (сравнение в нижнем регистре)
                     selected_genre = next(row for row in genres_data if row[0].lower() == genre_lower)
-                    genre = selected_genre[0]  # Use original genre case for logging and search
+                    #next - возвращает первый элемент из итерируемого объекта, удовлетворяющий заданному условию
+
+                    genre = selected_genre[0]  # Use original name genre case for logging and search
                     min_year, max_year = selected_genre[1], selected_genre[2]
                     if min_year is None or max_year is None:
                         print("\033[91mError: No valid year range for this genre!\033[0m")
